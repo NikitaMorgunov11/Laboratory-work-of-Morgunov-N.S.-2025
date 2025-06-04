@@ -1,0 +1,220 @@
+\documentclass[aspectratio=169]{beamer} % Изменяем формат на 16:9
+\usetheme{Madrid}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{multirow}
+\usepackage{adjustbox}
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing}
+\usepackage{graphicx}
+\usepackage{caption}
+
+\definecolor{myblue}{RGB}{70, 130, 180}
+
+\title{История ОГУ}
+\author{Н.С. Моргунов}
+\date{27 апреля 2025}
+
+\setbeamertemplate{background}{
+    \parbox[c][\paperheight][c]{\paperwidth}{
+        \vfill
+        \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{bakcground.png} 
+        \vfill
+    }
+}
+
+
+\begin{document}
+
+\begin{frame}[plain,noframenumbering] % Добавляем [plain,noframenumbering]
+\begin{tikzpicture}
+    \node[inner sep=0pt, anchor=south west] (image) at (0,0)
+    {\includegraphics[width=\paperwidth, height=\paperheight]{2.jpg}};
+
+
+    % Создаем блок для текста, чтобы он был лучше читаемым
+    \node[
+        fill=white, % Цвет фона 
+        opacity=0.7,   % Прозрачность фона 
+        text opacity=1,  % Непрозрачность текста
+        inner sep=20pt,  % Отступы от текста до фона
+        anchor=center  % Выравнивание по центру
+    ] at (current page.center) { % Размещаем в центре страницы
+        \begin{minipage}{0.8\textwidth}
+            \centering
+            \textbf{\Large История Орловского государственного университета} \\
+            \vspace{0.5cm}
+            \Large Н.С. Моргунов \\
+            \vspace{0.5cm}
+            \normalsize \today
+        \end{minipage}
+    };
+\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Основные этапы истории}
+  \begin{tikzpicture}[remember picture, overlay]
+    \draw[myblue, line width=8pt, decorate, decoration={snake, amplitude=.6mm, segment length=8mm}]
+      ([yshift=-0.3mm]current page.north west) -- ([yshift=-0.3mm]current page.north east);
+
+    \draw[myblue, line width=8pt, decorate, decoration={snake, amplitude=.5mm, segment length=8mm}]
+      ([xshift=0.3mm]current page.north west) -- ([xshift=0.3mm]current page.south west);
+  \end{tikzpicture}
+
+\begin{itemize}
+    \item \textbf{1919:} Основан Орловский государственный университет.  Эта дата знаменует начало классического университетского образования в Орле.
+    \item \textbf{1941-44:} ОГПИ эвакуирован в годы ВОВ.  Институт временно переехал в Бирск, сохранив свою структуру и продолжив работу.
+    \item \textbf{1954:} Начало развития технического образования.  В Орле создается учебно-консультационный пункт ВЗМИ, положивший начало техническому вузу.
+    \item \textbf{1996:} ОГПУ стал классическим университетом.  Педагогический институт получил новый статус, расширив спектр образовательных программ.
+    \item \textbf{2016:} Создан Опорный вуз "ОГУ им. Тургенева".  Произошло объединение нескольких вузов, образовав крупный региональный университет.
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}
+  \frametitle{Студенческие объединения}
+  \begin{tikzpicture}[remember picture, overlay]
+    \draw[myblue, line width=8pt, decorate, decoration={snake, amplitude=.6mm, segment length=8mm}]
+      ([yshift=-0.3mm]current page.north west) -- ([yshift=-0.3mm]current page.north east);
+
+    \draw[myblue, line width=8pt, decorate, decoration={snake, amplitude=.5mm, segment length=8mm}]
+
+          ([xshift=0.3mm]current page.north west) -- ([xshift=0.3mm]current page.south west);
+  \end{tikzpicture}
+  
+\begin{figure}[h!]
+\centering
+\vspace{-0.5cm}  
+\includegraphics[width=0.8\textwidth]{3.2.png}
+\end{figure}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+\begin{frame}
+  \frametitle{Ректоры}
+  \begin{tikzpicture}[remember picture, overlay]
+    \draw[myblue, line width=8pt, decorate, decoration={snake, amplitude=.6mm, segment length=8mm}]
+      ([yshift=-0.3mm]current page.north west) -- ([yshift=-0.3mm]current page.north east);
+
+    \draw[myblue, line width=8pt, decorate, decoration={snake, amplitude=.5mm, segment length=8mm}]
+      ([xshift=0.3mm]current page.north west) -- ([xshift=0.3mm]current page.south west);
+  \end{tikzpicture}
+  
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+    \vspace{-0.5cm}
+      \begin{itemize}
+        \item 1949—1954: С. И. Ефремов
+        \item 1954—1978: Г. М. Михалёв
+        \item 1978—1988: Н. С. Антонов
+        \item 1989—1992: С. А. Пискунов
+        \item 1992—2013: Ф. С. Авдеев
+        \item 1994—2013: В. А. Голенков
+        \item 2014—2015: (и. о.) В. Ф. Ницевич
+        \item 2015—2017: (и. о.) О. В. Пилипенко
+        \item 2017—2019: О. В. Пилипенко
+        \item 2019—2021: (и. о.) А. А. Федотов
+        \item 2021—2024: А. А. Федотов
+        \item 2025: (и.о) Г. М. Зомитева
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \centering  % Центрируем содержимое колонки
+        \includegraphics[width=0.45\textwidth]{5.jpg} % Увеличим изображение немного
+        \par % Добавляет пустую строку
+        \footnotesize Галина Михайловна Зомитева — исполняющая обязанности ректора Орловского государственного университета имени И.С. Тургенева.
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}
+  \frametitle{Факультеты}
+  \begin{tikzpicture}[remember picture, overlay]
+    \draw[myblue, line width=8pt, decorate, decoration={snake, amplitude=.6mm, segment length=8mm}]
+      ([yshift=-0.3mm]current page.north west) -- ([yshift=-0.3mm]current page.north east);
+
+    \draw[myblue, line width=8pt, decorate, decoration={snake, amplitude=.5mm, segment length=8mm}]
+      ([xshift=0.3mm]current page.north west) -- ([xshift=0.3mm]current page.south west);
+  \end{tikzpicture}
+
+
+\begin{tabularx}{\textwidth}{|m{2cm}|>{\centering\arraybackslash}m{6cm}|>{\centering\arraybackslash}m{6cm}|}
+\hline
+\textbf{Фото} & \textbf{Факультет} & \textbf{Адрес} \\
+\hline
+\adjustbox{width=2cm,valign=c}{\includegraphics[width=2cm]{10.jpg}} & \Large Исторический факультет & \Large Воскресенский переулок, 3 \\
+\hline
+\adjustbox{width=2cm,valign=c}{\includegraphics[width=2cm]{11.jpg}} & \Large Факультет технологии, предпринимательства и сервиса & \Large ул. Ленина, 6А \\
+\hline
+\adjustbox{width=2cm,valign=c}{\includegraphics[width=2cm]{12.jpg}} & \Large Физико-математический факультет & \Large ул. Комсомольская, д.95 \\
+\hline
+\end{tabularx}
+  
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+  \frametitle{Факультеты}
+  \begin{tikzpicture}[remember picture, overlay]
+    \draw[myblue, line width=8pt, decorate, decoration={snake, amplitude=.6mm, segment length=8mm}]
+      ([yshift=-0.3mm]current page.north west) -- ([yshift=-0.3mm]current page.north east);
+
+    \draw[myblue, line width=8pt, decorate, decoration={snake, amplitude=.5mm, segment length=8mm}]
+      ([xshift=0.3mm]current page.north west) -- ([xshift=0.3mm]current page.south west);
+  \end{tikzpicture}
+  
+
+\begin{tabularx}{\textwidth}{|m{2cm}|>{\centering\arraybackslash}m{6cm}|>{\centering\arraybackslash}m{6cm}|}
+\hline
+\textbf{Фото} & \textbf{Факультет} & \textbf{Адрес} \\
+\hline
+\adjustbox{width=2cm,valign=c}{\includegraphics[width=2cm]{13.jpg}} & \Large Философский факультет & \Large ул. Комсомольская, д.95 \\
+\hline
+\adjustbox{width=2cm,valign=c}{\includegraphics[width=2cm]{14.jpg}} & \Large Художественно-графический факультет & \Large ул. Комсомольская, д.95 \\
+\hline
+\adjustbox{width=2cm,valign=c}{\includegraphics[width=2cm]{15.jpg}} & \Large Факультет среднего профессионального образования & \Large Московская, д.34 \\
+\hline
+\end{tabularx}
+
+
+  
+\end{frame}
+
+\end{document}
